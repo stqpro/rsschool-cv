@@ -1,53 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
     <meta charset="UTF-8">
-    <title>Aliaksandr Siatsko</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <body>
-
-        <h1>Aliaksandr Siatsko</h1>
-        <h2>Contacts</h2>
-        <ul>
-            <li><b>E-mail</b>: <a href="mailto:me@stq.one">me@stq.one</a>;</li>
-            <li><b>Tel.</b> +375 (29) 531-93-65;</li>
-            <li><b>Telegram</b>: <a href="https://t.me/setko">@setko</a>;</li>
-            <li><b>Discord</b>: stq#2887.</li>
-        </ul>
-        <h2>About Myself</h2>
-        <p>I am 23 y.o. system administrator based in Minsk, Belarus. My goal is to obtain knowledge in the field of front-end development that will be enough for employment in a company.</p>
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML;</li>
-            <li>CSS <i>(Bootstrap)</i>;</li>
-            <li>JavaScript <i>(Fundamentals)</i>;</li>
-            <li>Git / GitHub;</li>
-            <li>Python <i>(Django)</i>;</li>
-            <li>Adobe Photoshop.</li>
-        </ul>
-        <h2>Code Example</h2>
-        <code>
-            <pre>
-function deepCount(a) {
-    let result = a.length;
-    
-    for(let i = 0; i < a.length; i++) {    
-        if(Array.isArray(a[i])) {
-            result += deepCount(a[i]);
-        }
-    }
-    
-    return result;
-}
-            </pre>
-        </code>
-        <h2>Education & Courses</h2>
-        <div class="education">
-            <input type="checkbox" checked disabled><b>2015 – 2020</b>: Faculty of Applied Mathematics and Computer Science in Belarusian State University;<br>
-            <input type="checkbox" disabled><b>2021 – now</b>: JavaScript/Front-end course in Rolling Scopes School.<br>
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>CV</title>
+  </head>
+  <body>
+    <header class="header">
+        <div class="container">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+              <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+              <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+              <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+              <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="languages">
-            <b>English Level</b>: A2/B1.
+    </header>
+    <main class="container main-container">
+      <div class="side-container">
+        <div class="profile">
+          <img src="assets/img/profile_photo.jpg" alt="Aliaksandr Siatsko" class="profile-photo">
         </div>
-    </body>
-</html> 
+        <section class="section" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+          <ul class="section-list">
+            <li class="section-item">Key: <a href="" class="section-link">Value</a></li>
+            <li class="section-item">Key: <a href="" class="section-link">Value</a></li>
+            <li class="section-item">Key: <a href="" class="section-link">Value</a></li>
+            <li class="section-item">Key: <a href="" class="section-link">Value</a></li>
+            <li class="section-item">Key: <a href="" class="section-link">Value</a></li>
+          </ul>
+        </section>
+        <section class="section" id="education">
+          <h2 class="section-title">Education</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+      </div>
+      <div class="wide-container">
+        <section class="section profile-main" id="profile">
+          <h1>Aliaksandr Siatsko</h1>
+          <p>(not a) JavaScript Front-end Developer</p>
+        </section>
+        <section class="section" id="summary">
+          <h2>Summary</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea animi qui eos, molestias suscipit tempore laborum expedita, aliquid cupiditate reiciendis esse laudantium veritatis aliquam magni nesciunt quia, sed illum autem.</p>
+        </section>
+        <section class="section" id="summary">
+          <h2>Summary</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea animi qui eos, molestias suscipit tempore laborum expedita, aliquid cupiditate reiciendis esse laudantium veritatis aliquam magni nesciunt quia, sed illum autem.</p>
+        </section>
+        <section class="section" id="skills">
+          <h2>Skills</h2>
+          <ul class="section-list">
+            <li class="section-item"><a href="" class="section-link">Item</a></li>
+            <li class="section-item"><a href="" class="section-link">Item</a></li>
+            <li class="section-item"><a href="" class="section-link">Item</a></li>
+            <li class="section-item"><a href="" class="section-link">Item</a></li>
+            <li class="section-item"><a href="" class="section-link">Item</a></li>
+          </ul>
+        </section>
+        <section class="section">
+          <h2>Code Example</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, tempora.</p>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        (c) 2022
+      </div>
+    </footer>
+  </body>
+</html>
