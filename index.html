@@ -8,7 +8,7 @@
     <link rel="icon" href="assets/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>CV</title>
   </head>
   <body>
@@ -17,9 +17,10 @@
           <nav class="nav">
             <ul class="nav-list">
               <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
-              <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
               <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+              <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
               <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+              <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
               <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
               <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
             </ul>
@@ -28,56 +29,75 @@
     </header>
     <main class="container main-container">
       <div class="side-container">
-        <div class="profile">
-          <img src="assets/img/profile_photo.jpg" alt="Aliaksandr Siatsko" class="profile-photo">
+        <div class="side-profile">
+          <img src="assets/img/profile_photo.jpg" alt="Aliaksandr Siatsko" class="side-profile-photo">
         </div>
         <section class="section" id="contacts">
           <h2 class="section-title">Contacts</h2>
           <ul class="section-list">
-            <li class="section-item">Key: <a href="" class="section-link">Value</a></li>
-            <li class="section-item">Key: <a href="" class="section-link">Value</a></li>
-            <li class="section-item">Key: <a href="" class="section-link">Value</a></li>
-            <li class="section-item">Key: <a href="" class="section-link">Value</a></li>
-            <li class="section-item">Key: <a href="" class="section-link">Value</a></li>
+            <li class="section-item">E-mail: <a href="mailto:me@stq.one" class="contact-link">me@stq.one</a></li>
+            <li class="section-item">Telegram: <a href="https://t.me/setko" class="contact-link" target="_blank">@setko</a></li>
+            <li class="section-item">Tel.: <a href="tel:+375295319365" class="contact-link">+375 (29) 531-93-65</a></li>
+            <li class="section-item">Discord: stq#2887</li>
           </ul>
         </section>
         <section class="section" id="education">
           <h2 class="section-title">Education</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Belarusian State University, 2015 – 2020</p>
+        </section>
+        <section class="section" id="english">
+          <h2 class="section-title">English Level</h2>
+          <p>Pre-Intermediate (A2/B1)</p>
         </section>
       </div>
       <div class="wide-container">
+        <img src="assets/img/profile_photo.jpg" alt="Aliaksandr Siatsko" class="wide-profile wide-profile-photo">
         <section class="section profile-main" id="profile">
           <h1>Aliaksandr Siatsko</h1>
-          <p>(not a) JavaScript Front-end Developer</p>
+          <p><i>(not yet a)</i> Junior JavaScript Front-end Developer</p>
         </section>
         <section class="section" id="summary">
           <h2>Summary</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea animi qui eos, molestias suscipit tempore laborum expedita, aliquid cupiditate reiciendis esse laudantium veritatis aliquam magni nesciunt quia, sed illum autem.</p>
-        </section>
-        <section class="section" id="summary">
-          <h2>Summary</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea animi qui eos, molestias suscipit tempore laborum expedita, aliquid cupiditate reiciendis esse laudantium veritatis aliquam magni nesciunt quia, sed illum autem.</p>
+          <p>I am 23 y.o. system administrator based in Minsk, Belarus. My goal is to obtain knowledge in the field of front-end development that will be enough for employment in a company.</p>
         </section>
         <section class="section" id="skills">
           <h2>Skills</h2>
-          <ul class="section-list">
-            <li class="section-item"><a href="" class="section-link">Item</a></li>
-            <li class="section-item"><a href="" class="section-link">Item</a></li>
-            <li class="section-item"><a href="" class="section-link">Item</a></li>
-            <li class="section-item"><a href="" class="section-link">Item</a></li>
-            <li class="section-item"><a href="" class="section-link">Item</a></li>
+          <ul class="skills-list">
+            <li class="skills-item">HTML</li>
+            <li class="skills-item">CSS <i>(Bootstrap)</i></li>
+            <li class="skills-item">JavaScript <i>(Fundamentals)</i></li>
+            <li class="skills-item">Git / GitHub</li>
+            <li class="skills-item">Python <i>(Django)</i></li>
+            <li class="skills-item">Adobe Photoshop</li>
           </ul>
         </section>
-        <section class="section">
+        <section class="section" id="projects">
+          <h2>Projects</h2>
+          <ul class="project-list">
+            <li class="project-item"><a href="https://stqpro.github.io/rsschool-cv" class="project-link">This CV</a></li>
+          </ul>
+        </section>
+        <section class="section" id="code">
           <h2>Code Example</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, tempora.</p>
+          <pre class="pre-code">
+<code class="js-code"><span class="highlight-operator">function</span> <span class="highlight-function-name">deepCount</span>(a) {
+  <span class="highlight-operator">let</span> result <span class="highlight-operator">=</span> <span class="highlight-value">a</span>.<span class="highlight-value">length</span>;
+
+  <span class="highlight-operator">for</span> (<span class="highlight-operator">let</span> i <span class="highlight-operator">=</span> <span class="highlight-value">0</span>; i <span class="highlight-operator">&lt;</span> <span class="highlight-value">a</span>.<span class="highlight-value">length</span>; i<span class="highlight-operator">++</span>) {    
+    <span class="highlight-operator">if</span>(Array.<span class="highlight-value">isArray</span>(a[i])) {
+        result <span class="highlight-operator">+=</span> <span class="highlight-value">deepCount</span>(<span class="highlight-value">a</span>[<span class="highlight-value">i</span>]);
+    }
+  }
+
+  <span class="highlight-operator">return</span> <span class="highlight-value">result</span>;
+}</code></pre>
         </section>
       </div>
     </main>
     <footer class="footer">
-      <div class="container">
-        (c) 2022
+      <div class="container footer-container">
+        <span class="copyright">© 2021 <a href="https://github.com/stqpro" class="copyright-link" target="_blank">stqpro</a></span>
+        <a href="https://rs.school/js/" target="_blank"><img src="assets/img/rs_school_js.svg" alt="RS School JS/FE Course" class="course-link"></a>
       </div>
     </footer>
   </body>
